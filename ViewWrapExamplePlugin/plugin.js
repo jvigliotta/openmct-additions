@@ -23,7 +23,6 @@ import ViewWrapExampleViewProvider from './ViewWrapExampleViewProvider.js';
 
 export default function plugin() {
   return function install(openmct) {
-    console.log('Installing ViewWrapExamplePlugin');
     openmct.objectViews.addProvider(new ViewWrapExampleViewProvider(openmct));
   };
 }
