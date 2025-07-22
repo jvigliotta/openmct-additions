@@ -2,12 +2,14 @@
 Plugins and other additional code for openmct
 
 
+### View Wrap Example
+View Wrap Example is a plugin that will wrap a view in a custom component.
 
-## My Other Items
+- Import the plugin folder into your project that is using openmct.
+- Then install the plugin: `openmct.install(openmct.plugins.ViewWrapExample());`
+
+
+
+### My Other Items
+(needs to be updated)
 My Other Items will add a new root level folder to your openmct installation.
-
-To install:
-- add the "my-other-items" folder alongside the "my-items" folder in "/openmct/platform/features/"
-- add `'../platform/features/my-other-items/bundle'` to "openmct/src/installDefaultBundles.js" define's arguments
-- add `MyOtherItems: 'platform/features/my-other-items'` to the bundleMap const in "/openmct/src/plugins/plugins.js"
-- add `openmct.install(openmct.plugins.MyOtherItems());` to index.html (or wherever you're installing plugins)
